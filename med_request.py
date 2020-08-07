@@ -48,8 +48,8 @@ def main():
     sura_request = MedicinesRequest(WEBDRIVER, WEBSITE)
 
     sura_request.select_option('selectTipoDoc', 'CÉDULA DE CIUDADANÍA')
-    sura_request.fill_data('numeroDocumento', '26414306', 'name')
-    sura_request.fill_data('.ng-empty.ng-valid-date', '19/11/1939', 'css')
+    sura_request.fill_data('numeroDocumento', '*', 'name')
+    sura_request.fill_data('.ng-empty.ng-valid-date', '*', 'css')
 
     input('Press any key to continue')
     
